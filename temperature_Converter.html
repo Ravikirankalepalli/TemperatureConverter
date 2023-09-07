@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+
+<body class="background-image">
+    <div class="centering">
+        <h1 style="color:#70571f;text-decoration: underline">
+            TEMPERATURE CONVERTER
+        </h1>
+
+        <div>
+            <label style="margin-left:6%" for="from">From:</label>
+
+            <select class="button1 btn btn-secondary" style="border-width=0px;" name="units" id="from">
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label style="margin-left:8%" for="to">To:</label>
+
+            <select class="button1 btn btn-dark" style="border-width=0px;" name="units1" id="to">
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <br />
+    </div>
+    <div class="centering">
+        <div>
+            <label for="value">Enter a Value to Convert:</label>
+            <input type="text" id="value" class="button2" />
+        </div>
+        <div>
+            <label for="answers">Answer after changing the unit:</label>
+            <input type="text" id="answers" class="button2" />
+        </div>
+    </div>
+
+
+
+    <div class="d-flex flex-row justify-content-center">
+        <div style="margin-right:120px" class="d-flex flex-column"><button class="btn btn-primary" onclick="clear">Clear</button></div>
+        <div class="d-flex flex-column justify-content-end"><button class="btn btn-success" onclick="calculate()">Calculate</button></div>
+    </div>
+
+
+</body>
+
+</html>
